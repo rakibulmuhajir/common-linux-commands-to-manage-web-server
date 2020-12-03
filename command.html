@@ -9,8 +9,9 @@
 <code>zip -r httpdocs.zip httpdocs</code>
 
 <h3>disable root login</h3>
-<p>Go to the following file. Edit it and set [PermitRootLogin] to no. if its commented out, remove # sign</p>
+<p>Go to the following file. Edit it and set [PermitRootLogin] to no. if its commented out, remove # sign. Then restart ssh service</p>
 <code>PermitRootLogin no</code>
+<code>systemctl restart sshd</code>
 
 
 

@@ -14,6 +14,6 @@ i'm not a server admin by profession and have to google every time i want to man
 <code>zip -r httpdocs.zip httpdocs</code>
 
 <h3>disable root login</h3>
-<p>Go to the following file. Edit it and set [PermitRootLogin] to no. if its commented out, remove # sign. Then restart ssh service</p>
+<p>Go to <code>/etc/ssh/sshd_config</code>. Edit it and set [PermitRootLogin] to no. if its commented out, remove # sign. Then restart ssh service</p>
 <code>PermitRootLogin no</code>
 <code>systemctl restart sshd</code>

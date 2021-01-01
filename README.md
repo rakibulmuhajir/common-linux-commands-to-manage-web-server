@@ -17,3 +17,9 @@ i'm not a server admin by profession and have to google every time i want to man
 <p>Go to <code>/etc/ssh/sshd_config</code>. Edit it and set [PermitRootLogin] to no. if its commented out, remove # sign. Then restart ssh service</p>
 <code>PermitRootLogin no</code>
 <code>systemctl restart sshd</code>
+<h3>mysql dump zip and save</h3>
+<code>mysqldump -u user_name -p db_name | gzip > /var/www/s2s.sql.gz</code>
+
+<h3>Delete a directory</h3>
+<p><code>f</code> flag for force delete so there is no confirmation</p>
+<code>rm -rf filename</code>
